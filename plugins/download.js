@@ -49,7 +49,7 @@ System({
 
 System({
     pattern: "ts ?(.*)",
-    fromMe: true,
+    fromMe: isPrivate,
     desc: "Download Sticker From Telegram",
     type: "download",
 },
@@ -123,7 +123,7 @@ System({
 
 System({
     pattern: 'insta ?(.*)',
-    fromMe: true,
+    fromMe: isPrivate,
     desc: 'instagram downloader',
     type: 'download',
 }, async (message, match) => {
